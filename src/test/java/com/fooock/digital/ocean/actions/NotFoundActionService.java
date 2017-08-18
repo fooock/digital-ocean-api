@@ -29,7 +29,7 @@ public class NotFoundActionService implements ActionService {
 
     @Override
     public Call<ActionResponse> get(long id) throws ApiException {
-        final String content = readResources.loadJson("src/test/resources/actions/not_found.json");
+        final String content = readResources.loadJson("src/test/resources/not_found.json");
         final ResponseBody body = ResponseBody.create(MediaType.parse("application/json"), content);
         final Response<ResponseError> response = Response.error(404, body);
         return behaviorDelegate.returning(Calls.response(response)).get(id);
