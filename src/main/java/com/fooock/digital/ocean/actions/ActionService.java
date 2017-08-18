@@ -2,6 +2,8 @@ package com.fooock.digital.ocean.actions;
 
 import com.fooock.digital.ocean.ApiException;
 import retrofit2.Call;
+import retrofit2.http.GET;
+import retrofit2.http.Path;
 
 /**
  * Service to retrieve actions
@@ -14,6 +16,7 @@ public interface ActionService {
      * @return All actions
      * @throws ApiException If an unexpected error occurs
      */
+    @GET("actions")
     Call<ActionsResponse> all() throws ApiException;
 
     /**
@@ -23,5 +26,6 @@ public interface ActionService {
      * @return Action associated with the given {@code id}
      * @throws ApiException If an unexpected error occurs
      */
-    Call<ActionResponse> get(long id) throws ApiException;
+    @GET("actions/{id}")
+    Call<ActionResponse> get(@Path("id") long id) throws ApiException;
 }
