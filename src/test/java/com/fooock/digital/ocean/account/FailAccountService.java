@@ -1,8 +1,8 @@
 package com.fooock.digital.ocean.account;
 
 import com.fooock.digital.ocean.ApiException;
-import com.fooock.digital.ocean.AuthFail;
 import com.fooock.digital.ocean.ReadResources;
+import com.fooock.digital.ocean.ResponseError;
 import okhttp3.MediaType;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -26,7 +26,7 @@ public class FailAccountService implements AccountService {
     public Call<AccountResponse> account() throws ApiException {
         final String content = readResources.loadJson("src/test/resources/auth_fail.json");
         final ResponseBody body = ResponseBody.create(MediaType.parse("application/json"), content);
-        final Response<AuthFail> response = Response.error(401, body);
+        final Response<ResponseError> response = Response.error(401, body);
         return behaviorDelegate.returning(Calls.response(response)).account();
     }
 }

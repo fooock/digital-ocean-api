@@ -1,6 +1,7 @@
 package com.fooock.digital.ocean;
 
 import com.fooock.digital.ocean.account.AccountService;
+import com.fooock.digital.ocean.actions.ActionService;
 
 /**
  * Digital Ocean entry point
@@ -15,4 +16,11 @@ public interface DigitalOcean {
      * @return {@code AccountService}
      */
     AccountService accountService();
+
+    /**
+     * Get the action service to retrieve actions
+     *
+     * @return {@code ActionService}
+     */
+    ActionService actionService();
 }

@@ -1,9 +1,10 @@
 package com.fooock.digital.ocean;
 
 /**
- * Contains info when the provided token is not valid, or the user is not authorized
+ * Contains info when the provided token is not valid, the user is not authorized or the
+ * resource is not found
  */
-public class AuthFail {
+public class ResponseError {
 
     private final String id;
     private final String message;
@@ -14,7 +15,7 @@ public class AuthFail {
      * @param id      Message id
      * @param message Message content
      */
-    public AuthFail(String id, String message) {
+    public ResponseError(String id, String message) {
         this.id = id;
         this.message = message;
     }

@@ -1,0 +1,48 @@
+{
+  "actions": [
+    {
+      "id": 36804636,
+      "status": "completed",
+      "type": "create",
+      "started_at": "2014-11-14T16:29:21Z",
+      "completed_at": "2014-11-14T16:30:06Z",
+      "resource_id": 3164444,
+      "resource_type": "droplet",
+      "region": "nyc1",
+      "region_slug": "nyc1"
+    },
+    {
+      "id": 36804637,
+      "status": "completed",
+      "type": "create",
+      "started_at": "2014-11-14T16:30:21Z",
+      "completed_at": "2014-11-14T16:31:06Z",
+      "resource_id": 3164445,
+      "resource_type": "droplet",
+      "region": "nyc2",
+      "region_slug": "nyc2"
+    },
+    {
+      "id": 36804638,
+      "status": "completed",
+      "type": "create",
+      "started_at": "2014-11-14T16:33:21Z",
+      "completed_at": "2014-11-14T16:35:06Z",
+      "resource_id": 3164446,
+      "resource_type": "droplet",
+      "region": "nyc3",
+      "region_slug": "nyc3"
+    }
+  ],
+  "links": {
+    "pages": {
+      "last": "https://api.digitalocean.com/v2/actions?page=159&per_page=1",
+      "next": "https://api.digitalocean.com/v2/actions?page=5&per_page=1",
+      "prev": "https://api.digitalocean.com/v2/actions?page=3&per_page=1",
+      "first": "https://api.digitalocean.com/v2/actions?page=1&per_page=1"
+    }
+  },
+  "meta": {
+    "total": 15912
+  }
+}
