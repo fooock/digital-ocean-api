@@ -142,8 +142,8 @@ public class ActionServiceTest extends BaseTestService<ActionService> {
         final ResponseError responseError = bodyConverter.convert(response.errorBody());
 
         assertEquals(404, response.code());
-        assertEquals("not_found", responseError.getId());
+        assertEquals("not_found", responseError.id());
         assertEquals("The resource you were accessing could not be found.",
-                responseError.getMessage());
+                responseError.message());
     }
 }

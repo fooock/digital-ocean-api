@@ -34,8 +34,8 @@ public class AccountServiceTest extends BaseTestService<AccountService> {
         final ResponseError responseError = bodyConverter.convert(accountResponse.errorBody());
 
         assertEquals(401, accountResponse.code());
-        assertEquals("unauthorized", responseError.getId());
-        assertEquals("Unable to authenticate you.", responseError.getMessage());
+        assertEquals("unauthorized", responseError.id());
+        assertEquals("Unable to authenticate you.", responseError.message());
     }
 
     @Test

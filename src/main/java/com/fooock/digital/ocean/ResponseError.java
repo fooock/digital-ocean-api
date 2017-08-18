@@ -20,11 +20,11 @@ public class ResponseError {
         this.message = message;
     }
 
-    public String getId() {
+    public String id() {
         return id;
     }
 
-    public String getMessage() {
+    public String message() {
         return message;
     }
 }
