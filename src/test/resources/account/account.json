@@ -1,0 +1,11 @@
+{
+  "account": {
+    "droplet_limit": 5,
+    "floating_ip_limit": 3,
+    "email": "test@test.com",
+    "uuid": "54t6921e147676342f17e6238111097b920dc0dd",
+    "email_verified": true,
+    "status": "active",
+    "status_message": ""
+  }
+}
