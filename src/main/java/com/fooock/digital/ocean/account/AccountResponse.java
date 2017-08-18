@@ -17,7 +17,7 @@ public class AccountResponse {
         this.account = account;
     }
 
-    public Account getAccount() {
+    public Account account() {
         return account;
     }
 }

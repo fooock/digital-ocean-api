@@ -53,42 +53,42 @@ public final class Account {
     /**
      * @return The total number of droplets the user may have
      */
-    public int getDropletLimit() {
+    public int dropletLimit() {
         return dropletLimit;
     }
 
     /**
      * @return The total number of floating IPs the user may have
      */
-    public int getFloatingIpLimit() {
+    public int floatingIpLimit() {
         return floatingIpLimit;
     }
 
     /**
      * @return The email the user has registered for Digital Ocean with
      */
-    public String getEmail() {
+    public String email() {
         return email;
     }
 
     /**
      * @return The universal identifier for this user
      */
-    public String getUuid() {
+    public String uuid() {
         return uuid;
     }
 
     /**
      * @return This value is one of "active", "warning" or "locked".
      */
-    public String getStatus() {
+    public String status() {
         return status;
     }
 
     /**
      * @return A human-readable message giving more details about the status of the account.
      */
-    public String getStatusMessage() {
+    public String statusMessage() {
         return statusMessage;
     }
 }

@@ -49,14 +49,14 @@ public class AccountServiceTest extends BaseTestService<AccountService> {
         final AccountResponse response = accountResponse.body();
         assertNotNull(response);
 
-        final Account account = response.getAccount();
+        final Account account = response.account();
         assertEquals(200, accountResponse.code());
-        assertEquals(5, account.getDropletLimit());
-        assertEquals(3, account.getFloatingIpLimit());
-        assertEquals("test@test.com", account.getEmail());
-        assertEquals("54t6921e147676342f17e6238111097b920dc0dd", account.getUuid());
+        assertEquals(5, account.dropletLimit());
+        assertEquals(3, account.floatingIpLimit());
+        assertEquals("test@test.com", account.email());
+        assertEquals("54t6921e147676342f17e6238111097b920dc0dd", account.uuid());
         assertTrue(account.isVerified());
-        assertEquals("active", account.getStatus());
-        assertEquals("", account.getStatusMessage());
+        assertEquals("active", account.status());
+        assertEquals("", account.statusMessage());
     }
 }

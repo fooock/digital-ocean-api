@@ -36,6 +36,7 @@ public class BaseTestService<T> {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         final NetworkBehavior behavior = NetworkBehavior.create();
+        behavior.setFailurePercent(0);
         mockRetrofit = new MockRetrofit.Builder(retrofit)
                 .networkBehavior(behavior)
                 .build();
