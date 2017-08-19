@@ -1,0 +1,30 @@
+{
+  "sizes": [
+    {
+      "slug": "512mb",
+      "memory": 512,
+      "vcpus": 1,
+      "disk": 20,
+      "transfer": 1.0,
+      "price_monthly": 5.0,
+      "price_hourly": 0.00744,
+      "regions": [
+        "nyc1",
+        "sgp1",
+        "ams1",
+        "ams2",
+        "sfo1",
+        "nyc2",
+        "lon1",
+        "nyc3",
+        "ams3"
+      ],
+      "available": true
+    }
+  ],
+  "links": {
+  },
+  "meta": {
+    "total": 1
+  }
+}
