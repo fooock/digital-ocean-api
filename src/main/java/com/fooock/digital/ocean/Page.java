@@ -17,10 +17,25 @@ package com.fooock.digital.ocean;
  */
 public class Page {
 
-    private String first;
-    private String prev;
-    private String next;
-    private String last;
+    private final String first;
+    private final String prev;
+    private final String next;
+    private final String last;
+
+    /**
+     * Create this object
+     *
+     * @param first The URI of the first page of results. Can be null
+     * @param prev  The URI of the previous sequential page of results. Can be null
+     * @param next  The URI of the next sequential page of results. Can be null
+     * @param last  The URI of the last page of results. Can be null
+     */
+    public Page(String first, String prev, String next, String last) {
+        this.first = first;
+        this.prev = prev;
+        this.next = next;
+        this.last = last;
+    }
 
     /**
      * @return The URI of the first page of results

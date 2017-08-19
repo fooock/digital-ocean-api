@@ -2,6 +2,8 @@ package com.fooock.digital.ocean;
 
 import com.fooock.digital.ocean.account.AccountService;
 import com.fooock.digital.ocean.actions.ActionService;
+import com.fooock.digital.ocean.region.RegionService;
+import com.fooock.digital.ocean.size.SizeService;
 
 /**
  * Digital Ocean entry point
@@ -23,4 +25,18 @@ public interface DigitalOcean {
      * @return {@code ActionService}
      */
     ActionService actionService();
+
+    /**
+     * Get the region service
+     *
+     * @return {@code RegionService}
+     */
+    RegionService regionService();
+
+    /**
+     * Get the size service
+     *
+     * @return {@code SizeService}
+     */
+    SizeService sizeService();
 }
