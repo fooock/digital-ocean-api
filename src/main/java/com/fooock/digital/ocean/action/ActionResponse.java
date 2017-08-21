@@ -1,4 +1,4 @@
-package com.fooock.digital.ocean.actions;
+package com.fooock.digital.ocean.action;
 
 /**
  * Response object for the {@link ActionService#get(long)}

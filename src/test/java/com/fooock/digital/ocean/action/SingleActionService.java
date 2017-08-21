@@ -1,4 +1,4 @@
-package com.fooock.digital.ocean.actions;
+package com.fooock.digital.ocean.action;
 
 import com.fooock.digital.ocean.ApiException;
 import com.fooock.digital.ocean.ReadResources;

@@ -1,7 +1,7 @@
 package com.fooock.digital.ocean;
 
 import com.fooock.digital.ocean.account.AccountService;
-import com.fooock.digital.ocean.actions.ActionService;
+import com.fooock.digital.ocean.action.ActionService;
 import com.fooock.digital.ocean.region.RegionService;
 import com.fooock.digital.ocean.size.SizeService;
 

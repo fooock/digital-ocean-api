@@ -1,4 +1,4 @@
-package com.fooock.digital.ocean.actions;
+package com.fooock.digital.ocean.action;
 
 import com.fooock.digital.ocean.ApiException;
 import com.fooock.digital.ocean.ReadResources;
@@ -13,18 +13,18 @@ import retrofit2.mock.Calls;
 /**
  *
  */
-public class EmptyActionService implements ActionService {
+public class MultipleActionService implements ActionService {
 
     private final BehaviorDelegate<ActionService> behaviorDelegate;
     private final ReadResources readResources = new ReadResources();
 
-    EmptyActionService(BehaviorDelegate<ActionService> behaviorDelegate) {
+    MultipleActionService(BehaviorDelegate<ActionService> behaviorDelegate) {
         this.behaviorDelegate = behaviorDelegate;
     }
 
     @Override
     public Call<ActionsResponse> all() throws ApiException {
-        final String content = readResources.loadJson("src/test/resources/actions/empty_actions.json");
+        final String content = readResources.loadJson("src/test/resources/actions/multiple_actions.json");
         final ResponseBody responseBody = ResponseBody.create(MediaType.parse("application/json"), content);
         final ActionsResponse actionsResponse = new Gson().fromJson(responseBody.charStream(), ActionsResponse.class);
         final Response<ActionsResponse> response = Response.success(actionsResponse);
