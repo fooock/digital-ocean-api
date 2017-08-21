@@ -2,6 +2,7 @@ package com.fooock.digital.ocean;
 
 import com.fooock.digital.ocean.account.AccountService;
 import com.fooock.digital.ocean.action.ActionService;
+import com.fooock.digital.ocean.image.ImageService;
 import com.fooock.digital.ocean.region.RegionService;
 import com.fooock.digital.ocean.size.SizeService;
 
@@ -39,4 +40,11 @@ public interface DigitalOcean {
      * @return {@code SizeService}
      */
     SizeService sizeService();
+
+    /**
+     * Get the image service
+     *
+     * @return {@code ImageService}
+     */
+    ImageService imageService();
 }
